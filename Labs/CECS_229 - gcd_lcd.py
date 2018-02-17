@@ -23,7 +23,9 @@ def factors_List(n):
     facts.append(reps)
     return facts
 
-
+#Find the gcd of a and b
+#   -get the factors of each number,
+#   -find the min of each factor 
 def gcd(a, b):
     factA = factors_List(a)
     factB = factors_List(b)
@@ -42,6 +44,9 @@ def gcd(a, b):
         j = j + 1
     return gcdiv
 
+#Find the lcm of a and b
+#   -get the factors of each number,
+#   -find the max of each factor
 def lcm(a, b):
     factA = factors_List(a)
     factB = factors_List(b)
@@ -60,6 +65,7 @@ def lcm(a, b):
         j = j + 1
     return lcmult
 
+#Find the gcd of a and b using Eucludian's algorithm
 def eucludian_gcd(b, a):
     x = b
     y = a
