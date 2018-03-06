@@ -16,8 +16,7 @@ Lab 3
 # • example: input [1, 2, 3], output [1, 8, 27].
 # =============================================================================
 
-def cubes(L):
-    return [i**3 for i in L]
+def cubes(L): return [i**3 for i in L]
 print(cubes([1,2,3,4]))
 
 # =============================================================================
@@ -29,8 +28,7 @@ print(cubes([1,2,3,4]))
 #   output ['B', 'C', 'A']
 # =============================================================================
 
-def dict2list(dct, keylist):
-    return [dct[x] for x in keylist]
+def dict2list(dct, keylist): return [dct[x] for x in keylist]
 
 dct={'a':'A', 'b':'B', 'c':'C'}
 keylist=['b','c','a']
@@ -46,8 +44,7 @@ print(dict2list(dct, keylist))
 # Hint: Use a comprehension that iterates over a zip or a range
 # =============================================================================
 
-def list2dict(L, keylist):
-    return {L[i]:keylist[i] for i in range(len(L))}
+def list2dict(L, keylist): return {L[i]:keylist[i] for i in range(len(L))}
 
 L=['A','B','C']
 keylist=['a','b','c']
